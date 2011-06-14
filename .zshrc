@@ -45,7 +45,7 @@ if [[ `uname -s ` = "Darwin" ]]; then
 
 	PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$reset_color%}%# "
 
-elif [[ `uname -s` == "Linux" ]]; then
+elif [[ `uname -s` = "Linux" ]]; then
 
 	PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%}%# "
 
