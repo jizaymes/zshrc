@@ -1,3 +1,13 @@
+## jizaymes' zshrc - github:jizaymes
+##
+## This is my zshrc. I use the base robbyrussell theme with some custom prompts
+##
+##
+## oh-my-zsh (http://symlnk.com/ohmyzsh) required.
+##
+##
+
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -28,16 +38,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:.
 
+## [james@host:~] % 
+## [james@host:~] (git:master&) % 
+
+
 PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%}%# %{$reset_color%}"
 
-#PROMPT="[%{$fg[blue]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m%{$reset_color%}]%{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%}%# %{$reset_color%} "
-
-
-#PROMPT="[%{$fg[blue]%}%n%{$reset_color%}@%{$fg_bold[red]%}%m%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info) %{$fg[white]%}%{$reset_color%} "
-
-
-
-#RPROMPT=" %{$fg[cyan]%}%c %{$reset_color%}"
-#RPROMPT=" %{$fg[cyan]%}%c %{$reset_color%}"
-
-export PROMPT #RPROMPT
+export PROMPT
