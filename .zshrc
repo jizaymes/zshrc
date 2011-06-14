@@ -41,7 +41,14 @@ export PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/bin:/bin:/sbin:/usr/sbin:/
 ## [james@host:~] % 
 ## [james@host:~] git:(master&) % 
 
+if [[ `uname -s ` = "Darwin" ]]; then
 
-PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info) %{$reset_color%}%# %{$reset_color%}"
+	PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$reset_color%}%# "
+
+elif [[ `uname -s` == "Linux" ]]; then
+
+	PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%}%# "
+
+fi
 
 export PROMPT
