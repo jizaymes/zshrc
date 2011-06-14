@@ -39,9 +39,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:.
 
 ## [james@host:~] % 
-## [james@host:~] (git:master&) % 
+## [james@host:~] git:(master&) % 
 
 
-PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%}%# %{$reset_color%}"
+PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color %}%# %{$reset_color%}"
 
 export PROMPT
