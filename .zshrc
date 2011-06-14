@@ -42,6 +42,6 @@ export PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/bin:/bin:/sbin:/usr/sbin:/
 ## [james@host:~] git:(master&) % 
 
 
-PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color %}%# %{$reset_color%}"
+PROMPT="[%{$fg[blue]%}%n%{$reset_color%}%{$fg[white]%}@%{$fg_no_bold[magenta]%}%m%{$reset_color%}:%{$fg[cyan]%}%c%{$reset_color%}] %{$fg_bold[blue]%}$(git_prompt_info) %{$reset_color%}%# %{$reset_color%}"
 
 export PROMPT
